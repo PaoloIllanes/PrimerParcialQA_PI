@@ -8,7 +8,7 @@ public class Descuento {
 
         if(salario<2000){
             throw new Exception("El salario introduciodo no es valido");
-        }else if (salario>2000 && salario < 4000){
+        }else if (salario < 4001){
             des =(salario/100) *5;
 
             msg="El descuento es de : "+des+" Bs";
