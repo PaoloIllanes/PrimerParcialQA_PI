@@ -9,8 +9,17 @@ public class ValidUser {
 
     }
 
-    public String getPermission(){
+    public String getPermission(String user, String pwd){
         String msg="";
+
+        if(permission.validUser(user,pwd)){
+            String per = permission.getPermission(user);
+            msg="PERMISSION ROLE : "+per+" 09:20:00";
+
+        }else{
+            msg="Invalid user or password";
+        }
+
     return msg;
     }
 }

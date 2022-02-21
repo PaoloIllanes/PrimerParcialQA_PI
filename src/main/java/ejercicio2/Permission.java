@@ -8,7 +8,7 @@ public class Permission {
         return true;
     }
 
-    public String getPermission(){
+    public String getPermission(String user){
         //todo
         return"";
     }
